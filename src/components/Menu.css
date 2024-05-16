@@ -1,0 +1,132 @@
+/* Estilos base */
+.menu {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.menu h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  background-color: #eee;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu li span {
+  font-weight: bold;
+}
+
+.menu-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.menu-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.item-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-card-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.item-card h3 {
+  margin: 0.5rem 0;
+}
+
+.item-card-price {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.close-button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #ff1c1c;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .menu {
+    padding: 0.5rem; /* Reducir el padding en pantallas pequeñas */
+    margin: 1rem auto; /* Ajustar el margen */
+  }
+
+  .menu li {
+    padding: 0.5rem; /* Reducir el padding de los elementos de la lista */
+    margin: 0.5rem 0; /* Ajustar el margen entre elementos */
+  }
+
+  .menu-image {
+    width: 60px; /* Reducir el tamaño de la imagen en pantallas pequeñas */
+    height: 60px;
+    margin-right: 10px; /* Reducir el margen entre la imagen y el texto */
+  }
+
+  .item-card {
+    width: 90%; /* Ajustar el tamaño del cuadro de elemento en pantallas pequeñas */
+    max-width: 400px; /* Limitar el ancho máximo */
+    padding: 1rem; /* Reducir el padding del cuadro de elemento */
+  }
+
+  .item-card-image {
+    width: 150px; /* Reducir el tamaño de la imagen en el cuadro de elemento */
+    height: 150px;
+  }
+}
+
+
+
+  

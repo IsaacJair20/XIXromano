@@ -1,0 +1,62 @@
+/* Estilos base */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Usamos min-height en lugar de height para adaptarse mejor */
+  background-color: #f8f8f8;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column; /* Cambiamos a columna en pantallas pequeñas */
+  align-items: center;
+  text-align: center; /* Centramos el texto en pantallas pequeñas */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.presentation img {
+  width: 150px; /* Reducimos el tamaño de la imagen en pantallas pequeñas */
+  height: auto;
+  margin-bottom: 20px; /* Espacio más grande bajo la imagen */
+}
+
+.description {
+  max-width: 100%; /* El texto ocupa el ancho completo en pantallas pequeñas */
+}
+
+.description p {
+  margin: 0; /* Quitamos el margen para ocupar menos espacio en pantallas pequeñas */
+  font-size: 14px; /* Reducimos el tamaño de fuente para pantallas pequeñas */
+  line-height: 1.4;
+}
+
+/* Estilos responsive */
+@media (min-width: 768px) {
+  .presentation {
+    flex-direction: row; /* Volver a la dirección original en pantallas más grandes */
+    text-align: left;
+    padding: 30px;
+  }
+
+  .presentation img {
+    width: 200px; /* Volver al tamaño original en pantallas más grandes */
+    margin-bottom: 0;
+    margin-right: 20px; /* Restablecer el margen a la derecha */
+  }
+
+  .description {
+    max-width: 400px; /* Mantenemos el límite de ancho del texto */
+  }
+
+  .description p {
+    font-size: 16px; /* Volver al tamaño de fuente original en pantallas más grandes */
+    line-height: 1.5;
+  }
+}
+
+  
+  

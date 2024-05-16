@@ -1,0 +1,49 @@
+/* Estilos específicos del componente App */
+/* Estilos base */
+.app {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header {
+  background-color: #e06c0d;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Estilos responsive */
+@media (max-width: 600px) {
+  .app {
+    padding: 0.5rem; /* Reducir el padding en pantallas pequeñas */
+  }
+
+  nav a {
+    margin: 0 0.5rem; /* Reducir el margen entre enlaces */
+    padding: 0.3rem; /* Reducir el padding de los enlaces */
+  }
+}
+
+  
+  
